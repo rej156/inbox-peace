@@ -4,6 +4,7 @@
             [reagent.core :as reagent :refer [atom]]
             [re-frame.core :refer [dispatch dispatch-sync]]
             [cljs.core.async :refer [>! <!]]
+            [cljsjs.jquery]
             [inbox-peace.views :as views])
   (:require-macros [cljs.core.async.macros :refer [go]]))
 
@@ -15,6 +16,8 @@
   ;;       (console/log "Background said: " (<! bg))))
 
   ;; (dispatch-sync [:initialize-db])
+;;  (js/$)
   (reagent/render [views/app]
-                  (.getElementById js/document ":j"))
+                  (get (.getElementsByClassName js/document "aki pp") 0))
+
   )

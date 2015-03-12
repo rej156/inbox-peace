@@ -5,6 +5,7 @@
                  [org.clojure/clojurescript "0.0-3058"]
                  [org.clojure/core.async "0.1.346.0-17112a-alpha"]
                  [khroma "0.0.2"]
+                 [cljsjs/jquery "1.9.0-0"]
                  [re-frame "0.2.0"]]
   :source-paths ["src"]
   :profiles {:dev {:plugins [[com.cemerick/austin "0.1.6"]
