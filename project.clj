@@ -6,6 +6,7 @@
                  [org.clojure/core.async "0.1.346.0-17112a-alpha"]
                  [khroma "0.0.2"]
                  [cljsjs/jquery "1.9.0-0"]
+                 [cljsjs/jquery-ui "1.11.3-1"]
                  [re-frame "0.2.0"]
                  [secretary "1.2.2-SNAPSHOT"]]
   :source-paths ["src"]

@@ -5,7 +5,8 @@
     {
       "matches": ["https://mail.google.com/*"],
       "html": ["main.html"],
-      "js": ["inbox_peace.js", "content.js", "main.js"],
+      "js": ["inbox_peace.js", "content.js", "main.js","bigvideo.js","imagesloaded.js","video.js"],
+      "css": ["bigvideo.css"],
       "run_at": "document_end"
     }
   ],

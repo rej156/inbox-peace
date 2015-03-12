@@ -5,6 +5,7 @@
             [re-frame.core :refer [dispatch dispatch-sync]]
             [cljs.core.async :refer [>! <!]]
             [cljsjs.jquery]
+            [cljsjs.jquery-ui]
             [inbox-peace.views.zen :as zen]
             [inbox-peace.views :as views])
   (:require-macros [cljs.core.async.macros :refer [go]]))
