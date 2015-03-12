@@ -7,4 +7,4 @@
   (let [x 1]
     (fn []
       [:div.lol
-       [:button "Hello"]])))
+       [:button {:on-click #(set! (.-location js/window) "#/zenmode")} "Inbox Peace"]])))

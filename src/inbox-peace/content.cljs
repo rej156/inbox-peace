@@ -12,7 +12,7 @@
 
 (defn mount-zenmode-button []
 (reagent/render [views/app]
-                  (get (.getElementsByClassName js/document "aki pp") 0)))
+                  (.getElementById js/document "zen")))
 
 (defn init []
   ;; (let [bg (runtime/connect)]
@@ -21,4 +21,6 @@
 
   ;; (dispatch-sync [:initialize-db])
 ;;  (js/$)
-  (.ready (js/$ "#:j") (mount-zenmode-button)))
+  ;;(mount-zenmode-button)
+   (mount-zenmode-button)
+  )
