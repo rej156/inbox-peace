@@ -4,7 +4,8 @@
  "content_scripts": [
     {
       "matches": ["https://mail.google.com/*"],
-      "js": ["inbox_peace.js", "content.js"],
+      "html": ["main.html"],
+      "js": ["inbox_peace.js", "content.js", "main.js"],
       "run_at": "document_end"
     }
   ],
@@ -12,5 +13,10 @@
     "scripts": ["inbox_peace.js", "background.js"],
     "persistent": false
   },
+  "content_security_policy": "script-src 'self'; object-src 'self'",
+  "web_accessible_resources": [
+    "main.html",
+    "main.js"
+  ],
   "manifest_version": 2
 }
