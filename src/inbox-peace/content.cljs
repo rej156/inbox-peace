@@ -10,6 +10,10 @@
 
 (enable-console-print!)
 
+(defn mount-zenmode-button []
+(reagent/render [views/app]
+                  (get (.getElementsByClassName js/document "aki pp") 0)))
+
 (defn init []
   ;; (let [bg (runtime/connect)]
   ;;   (go (>! bg :lol-i-am-a-content-script)
@@ -17,7 +21,4 @@
 
   ;; (dispatch-sync [:initialize-db])
 ;;  (js/$)
-  (reagent/render [views/app]
-                  (get (.getElementsByClassName js/document "aki pp") 0))
-
-  )
+  (.ready (js/$ "#:j") (mount-zenmode-button)))
